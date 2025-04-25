@@ -1,0 +1,440 @@
+:root {
+  --primary-color: #285E67;
+  --accent-color: #EBBFAE;
+  --bg-color: #ffffff;
+  --bg-light: #f4f4f4;
+  --text-dark: #2A2A2A;
+  --text-muted: #555;
+  --font-main: 'Poppins', sans-serif;
+  --btn-radius: 67px;
+  --btn-width: 257px;
+  --btn-hight: 56px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-dark);
+  background-color: var(--bg-color);
+  line-height: 1.6;
+}
+
+/* sekcja header*/
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 33px;
+  margin-top: 40px;
+}
+
+.nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #6f7374;
+  border-radius: 50%;
+}
+
+.logo {
+  font-size: 21px;
+  color: var(--primary-color);
+  text-decoration: none;
+
+}
+
+.nav a:hover {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  background-color: var(--bg-color);
+  gap: 104px;
+}
+
+.hero h1 {
+  font-size: 65px;
+  margin-bottom: 64px;
+  font-weight: 600;
+  line-height: 82px;
+  color: var(--text-dark);
+}
+
+.hero p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.hero .btn-primary {
+  margin: 64px 0;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--btn-radius);
+  text-decoration: none;
+  display: inline-block;
+  width: var(--btn-width);
+  height: var(--btn-hight);
+}
+
+.hero .btn-primary:hover {
+  background-color: var(--accent-color);
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.hero-images img {
+  width: 45%;
+  border-radius: 10px;
+}
+
+/*sekcja info*/
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 104px;
+  background-color: var(--bg-light);
+  border-radius: 12px;
+  gap: 120px;
+}
+
+.cart_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 104px;
+  margin-bottom: 104px;
+  border-radius: 12px;
+}
+
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 104px;
+  width: 592px;
+  gap: 69px;
+}
+
+
+.info-item p {
+  text-align: left;
+  size: 16px;
+  color: var(--text-dark);
+  margin-top: 16px;
+}
+
+.icon {
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 58px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.illustration {
+  display: flex;
+  align-self: flex-end;
+  width: 291px;
+  height: 294px;
+  top: 177px;
+  left: 191px;
+}
+
+/*sekcja produkt */
+
+.icon_flowers {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.icon_flowers .img {
+  width: 52px;
+  height: 52px;
+}
+
+.produce {
+  display: flex;
+  gap: 53px;
+  align-items: center;
+}
+
+.produce img {
+  width: 623px;
+  height: 578px;
+  border-radius: 16px;
+}
+
+.produce_cointener {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 104px;
+  gap: 120px;
+}
+
+.produce-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 104px;
+  margin-bottom: 104px;
+}
+
+.produce-info h2,
+p {
+  text-align: left;
+  size: 16px;
+  color: var(--text-dark);
+  margin-top: 16px;
+}
+
+
+/*sekcja You are what you eat */
+
+.icon_accent {
+  background-color: var(--accent-color);
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 58px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration_diet {
+  display: flex;
+  width: 291px;
+  height: 294px;
+  top: 177px;
+  left: 191px;
+}
+
+/* sekcja cta */
+
+
+.bg_forest {
+  background: url('./assets/images/forest.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  text-align: center;
+  padding: 80px 20px 80px;
+  margin-top: 104px;
+  height: 705px;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.overlay h2 {
+  text-align: center;
+  size: 38px;
+  color: white;
+  margin-top: 16px;
+}
+
+.overlay p {
+  text-align: center;
+  size: 16px;
+  color: white;
+  margin-top: 16px;
+}
+
+.leaf-icon {
+  background-color: transparent;
+  color: white;
+  margin: auto;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 92px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay .btn-primary {
+  margin: 64px 0;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ffffff;
+  border-radius: var(--btn-radius);
+  text-decoration: none;
+  display: inline-block;
+  align-self: center;
+  width: var(--btn-width);
+  height: var(--btn-hight);
+}
+
+.overlay .btn-primary:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.badges-wrapper {
+  background: white;
+  position: relative;
+  width: 300px;
+
+}
+
+.badges {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: var(--accent-color);
+  border-radius: 10px;
+  margin-top: -150px;
+  color: var(--primary-color);
+  font-weight: 400px;
+  gap: 17px;
+  margin: -200px auto 0;
+  margin-bottom: -80px;
+  padding: 32px;
+  max-width: 1165px;
+  height: 356px;
+  text-align: center;
+  align-items: center;
+}
+
+.badges_1 p {
+  text-align: center;
+}
+
+.badges_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  text-align: center;
+}
+
+.badges_1 img {
+  width: 82px;
+  height: 82px;
+  margin-bottom: 10px;
+}
+
+/*footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  padding: 32px;
+  text-align: center;
+  margin-top: 200px;
+  height: 245px;
+}
+
+footer nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: var(--bg-color);
+  font-weight: 400;
+}
+
+footer nav a:hover {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+.socials a {
+  margin: 16px;
+  color: var(--bg-color);
+  font-size: 16px;
+}
+
+footer .logo {
+  font-size: 21px;
+  color: var(--bg-color);
+  text-decoration: none;
+}
+
+footer .logo-wrapper {
+  margin-bottom: 48px;
+}
+
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer_line {
+  display: flex;
+  justify-content: space-between;
+}
